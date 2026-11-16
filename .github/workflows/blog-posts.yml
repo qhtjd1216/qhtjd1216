@@ -16,5 +16,5 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           feed_list: "https://rss.blog.naver.com/qhtjd1216.xml"
-          max_post_count: 5
+          max_post_count: 1
           commit_message: "최근 블로그 글 갱신"
