@@ -12,10 +12,8 @@
     <td valign="top">
       <a href="https://blog.naver.com/qhtjd1216"><img src="https://img.shields.io/badge/Naver%20Blog-03C75A?style=for-the-badge&logo=naver&logoColor=white" alt="Naver Blog"></a>
       <br><br>
-      <b>오늘의 글</b><br>
-      📈 경제 · 🚁 드론 · 🤖 AI 자동화 중 하루 한 편
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
+      <b>주제</b><br>
+      📈 경제 · 🚁 드론 · 🤖 AI 자동화
     </td>
     <td valign="top">
       <a href="https://www.instagram.com/thrivesoul_"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
