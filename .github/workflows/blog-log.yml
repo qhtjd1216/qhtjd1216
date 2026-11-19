@@ -1,0 +1,28 @@
+name: 블로그 발행 글 기록
+
+on:
+  schedule:
+    - cron: '23 22 * * *'   # 매일 07:23 KST (07:48 브랜딩 브리핑 전에)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python scripts/blog_log.py
+      - name: 바뀐 내용 커밋
+        run: |
+          if [ -n "$(git status --porcelain blog)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add blog
+            git commit -m "블로그 발행 글 기록 갱신"
+            git push
+          fi
